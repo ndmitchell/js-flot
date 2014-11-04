@@ -13,9 +13,8 @@ main = do
     versionTags Flot.version === []
     versionBranch Flot.version === take 3 (versionBranch version)
     forM_ [minBound..maxBound] $ \i -> do
-        -- a <- wget $ Flot.url i
-        b <- readFile =<< Flot.file i
-        b === b
+        s <- readFile =<< Flot.file i
+        min 1 (length s) === 1
     putStrLn "\nSuccess"
 
 
