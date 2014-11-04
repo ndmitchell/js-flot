@@ -10,7 +10,8 @@ maintainer:         Neil Mitchell <ndmitchell@gmail.com>
 copyright:          Neil Mitchell 2014
 synopsis:           Obtain minified flot code
 description:
-    This package bundles the minified flot code (a jQuery plotting library) into a Haskell package,
+    This package bundles the minified <http://www.flotcharts.org/ Flot> code
+    (a jQuery plotting library) into a Haskell package,
     so it can be depended upon by Cabal packages. The first three components of
     the version number match the upstream flot version. The package is designed
     to meet the redistribution requirements of downstream users (e.g. Debian).
