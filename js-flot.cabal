@@ -17,7 +17,7 @@ description:
     to meet the redistribution requirements of downstream users (e.g. Debian).
 homepage:           https://github.com/ndmitchell/js-flot#readme
 bug-reports:        https://github.com/ndmitchell/js-flot/issues
-tested-with:        GHC==7.8.2, GHC==7.6.3, GHC==7.4.2, GHC==7.2.2
+tested-with:        GHC==7.8.3, GHC==7.6.3, GHC==7.4.2, GHC==7.2.2
 extra-source-files:
     javascript/flot-0.8.3.zip
     CHANGES.txt
