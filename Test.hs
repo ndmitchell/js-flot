@@ -10,8 +10,7 @@ import Control.Monad
 main :: IO ()
 main = do
     length (versionBranch Flot.version) === 3
-    versionTags Flot.version === []
-    versionBranch Flot.version === take 3 (versionBranch version)
+    show Flot.version === show version{versionBranch = take 3 $ versionBranch version}
     forM_ [minBound..maxBound] $ \i -> do
         s <- readFile =<< Flot.file i
         min 1 (length s) === 1
