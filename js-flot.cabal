@@ -61,5 +61,4 @@ test-suite js-flot-test
     type: exitcode-stdio-1.0
     main-is: Test.hs
     build-depends:
-        base == 4.*,
-        HTTP
+        base == 4.*
