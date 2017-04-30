@@ -1,6 +1,6 @@
 -- | Fake cabal module for local building
 
-module Paths_js_flot where
+module Paths_js_flot(getDataFileName, version) where
 
 import Data.Version
 import System.Directory
