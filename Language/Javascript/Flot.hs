@@ -8,6 +8,22 @@
 -- > main = do
 -- >     putStrLn $ "Flot version " ++ show Flot.version ++ " source:"
 -- >     putStrLn =<< readFile =<< Flot.file Flot.Flot
+--
+--   This package installs data files containing the Flot sources, which must be available at runtime.
+--   If you want to produce an executable with no dependency on associated data files, you can use the
+--   @file-embed@ library (<https://hackage.haskell.org/package/file-embed>):
+--
+-- > {-# LANGUAGE TemplateHaskell #-}
+-- >
+-- > import Data.FileEmbed
+-- > import qualified Data.ByteString as BS
+-- > import qualified Language.Javascript.Flot as Flot
+-- > import Language.Haskell.TH.Syntax
+-- >
+-- > main = print flotContents
+-- >
+-- > flotContents :: BS.ByteString
+-- > flotContents = $(embedFile =<< runIO (Flot.file Flot.Flot))
 module Language.Javascript.Flot(
     Flot(..), version, file
     ) where

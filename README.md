@@ -17,3 +17,19 @@ main = do
 
 Note that Flot depends on jQuery, a Haskell version of which can be obtained
 from the [`js-jquery` package](https://github.com/ndmitchell/js-jquery#readme).
+
+This package installs data files containing the Flot sources, which must be available at runtime. If you want to produce an executable with no dependency on associated data files, you can use the [`file-embed`](https://hackage.haskell.org/package/file-embed) library:
+
+```haskell
+{-# LANGUAGE TemplateHaskell #-}
+
+import Data.FileEmbed
+import qualified Data.ByteString as BS
+import qualified Language.Javascript.Flot as Flot
+import Language.Haskell.TH.Syntax
+
+main = print flotContents
+
+flotContents :: BS.ByteString
+flotContents = $(embedFile =<< runIO (Flot.file Flot.Flot))
+```
