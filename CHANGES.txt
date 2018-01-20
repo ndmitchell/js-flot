@@ -1,5 +1,5 @@
 Changelog for js-flot
 
     Add a file-embed example
-0.8.3
+0.8.3, released 2014-11-10
     Initial version
