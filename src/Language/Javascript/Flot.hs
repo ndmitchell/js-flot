@@ -59,6 +59,7 @@ file :: Flot -> IO FilePath
 file = Paths.getDataFileName . name
 
 
+name :: Flot -> String
 name Flot = "jquery.flot.min.js"
 name x = "jquery.flot." ++ map toLower (drop 4 $ show x) ++ ".min.js"
 
