@@ -1,4 +1,4 @@
-# js-flot [![Hackage version](https://img.shields.io/hackage/v/js-flot.svg?label=Hackage)](https://hackage.haskell.org/package/js-flot) [![Stackage version](https://www.stackage.org/package/js-flot/badge/nightly?label=Stackage)](https://www.stackage.org/package/js-flot) [![Build Status](https://img.shields.io/travis/ndmitchell/js-flot/master.svg)](https://travis-ci.org/ndmitchell/js-flot)
+# js-flot [![Hackage version](https://img.shields.io/hackage/v/js-flot.svg?label=Hackage)](https://hackage.haskell.org/package/js-flot) [![Stackage version](https://www.stackage.org/package/js-flot/badge/nightly?label=Stackage)](https://www.stackage.org/package/js-flot) [![Build status](https://img.shields.io/travis/ndmitchell/js-flot/master.svg?label=Build)](https://travis-ci.org/ndmitchell/js-flot)
 
 This package bundles the minified [Flot](http://www.flotcharts.org/) code
 (a jQuery plotting library) into a Haskell package,
