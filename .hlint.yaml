@@ -1,0 +1,7 @@
+# HLint configuration file
+# https://github.com/ndmitchell/hlint
+##########################
+
+# We don't depend on the 'extra' library
+- ignore: {name: "Use enumerate"}
+- ignore: {name: "Use lower"}
