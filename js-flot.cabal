@@ -7,7 +7,7 @@ license-file:       LICENSE
 category:           Javascript
 author:             Neil Mitchell <ndmitchell@gmail.com>
 maintainer:         Neil Mitchell <ndmitchell@gmail.com>
-copyright:          Neil Mitchell 2014-2019
+copyright:          Neil Mitchell 2014-2020
 synopsis:           Obtain minified flot code
 description:
     This package bundles the minified <http://www.flotcharts.org/ Flot> code
