@@ -10,7 +10,7 @@ import System.FilePath
 getDataFileName :: FilePath -> IO FilePath
 getDataFileName x = do
     dir <- getCurrentDirectory
-    return $ dir </> "javascript" </> x
+    pure $ dir </> "javascript" </> x
 
 version :: Version
 version = Version [0,8,3] []
