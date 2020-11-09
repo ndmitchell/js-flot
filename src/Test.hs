@@ -1,18 +1,18 @@
 
 module Main(main) where
 
-import Paths_js_flot
-import qualified Language.Javascript.Flot as Flot
+import Paths_js_chart
+import qualified Language.Javascript.Chart as Chart
 import Data.Version
 import Control.Monad
 
 
 main :: IO ()
 main = do
-    length (versionBranch Flot.version) === 3
-    show Flot.version === show version{versionBranch = take 3 $ versionBranch version}
+    length (versionBranch Chart.version) === 3
+    show Chart.version === show version{versionBranch = take 3 $ versionBranch version}
     forM_ [minBound..maxBound] $ \i -> do
-        s <- readFile =<< Flot.file i
+        s <- readFile =<< Chart.file i
         min 1 (length s) === 1
     putStrLn "\nSuccess"
 

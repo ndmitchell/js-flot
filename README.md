@@ -1,35 +1,31 @@
-# js-flot [![Hackage version](https://img.shields.io/hackage/v/js-flot.svg?label=Hackage)](https://hackage.haskell.org/package/js-flot) [![Stackage version](https://www.stackage.org/package/js-flot/badge/nightly?label=Stackage)](https://www.stackage.org/package/js-flot) [![Build status](https://img.shields.io/travis/ndmitchell/js-flot/master.svg?label=Build)](https://travis-ci.org/ndmitchell/js-flot)
+# js-chart [![Hackage version](https://img.shields.io/hackage/v/js-chart.svg?label=Hackage)](https://hackage.haskell.org/package/js-chart) [![Stackage version](https://www.stackage.org/package/js-chart/badge/nightly?label=Stackage)](https://www.stackage.org/package/js-chart) [![Build status](https://img.shields.io/travis/jonascarpay/js-chart/master.svg?label=Build)](https://travis-ci.org/jonascarpay/js-chart)
 
-This package bundles the minified [Flot](http://www.flotcharts.org/) code
-(a jQuery plotting library) into a Haskell package,
-so it can be depended upon by Cabal packages. The first three components of
-the version number match the upstream Flot version. The package is designed
-to meet the redistribution requirements of downstream users (e.g. Debian).
-As an example:
+This package bundles the minified [http://www.chartjs.org/](`chart.js`) code into a Haskell package, so it can be depended upon by Cabal packages.
+The first three components of the version number match the upstream chart.js version.
+The package is designed to meet the redistribution requirements of downstream users (e.g. Debian).
+This package is a fork of [https://hackage.haskell.org/package/js-flot](js-flot) using `chart.js` instead of `flot`.
 
 ```haskell
-import qualified Language.Javascript.Flot as Flot
+import qualified Language.Javascript.Chart as Chart
 
+TODO check
 main = do
-    putStrLn $ "Flot version " ++ show Flot.version ++ " source:"
-    putStrLn =<< readFile =<< Flot.file Flot.Flot
+    putStrLn $ "Chart version " ++ show Chart.version ++ " source:"
+    putStrLn =<< readFile =<< Chart.file Chart.Chart
 ```
 
-Note that Flot depends on jQuery, a Haskell version of which can be obtained
-from the [`js-jquery` package](https://github.com/ndmitchell/js-jquery#readme).
-
-This package installs data files containing the Flot sources, which must be available at runtime. If you want to produce an executable with no dependency on associated data files, you can use the [`file-embed`](https://hackage.haskell.org/package/file-embed) library:
+This package installs data files containing the `chart.js` sources, which must be available at runtime. If you want to produce an executable with no dependency on associated data files, you can use the [`file-embed`](https://hackage.haskell.org/package/file-embed) library:
 
 ```haskell
 {-# LANGUAGE TemplateHaskell #-}
 
 import Data.FileEmbed
 import qualified Data.ByteString as BS
-import qualified Language.Javascript.Flot as Flot
+import qualified Language.Javascript.Chart as Chart
 import Language.Haskell.TH.Syntax
 
-main = print flotContents
+main = print chartContents
 
-flotContents :: BS.ByteString
-flotContents = $(embedFile =<< runIO (Flot.file Flot.Flot))
+chartContents :: BS.ByteString
+chartContents = $(embedFile =<< runIO (Chart.file Chart.Chart))
 ```

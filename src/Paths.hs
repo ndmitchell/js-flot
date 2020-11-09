@@ -1,6 +1,6 @@
 -- | Fake cabal module for local building
 
-module Paths_js_flot(getDataFileName, version) where
+module Paths_js_chart(getDataFileName, version) where
 
 import Data.Version
 import System.Directory
@@ -13,4 +13,4 @@ getDataFileName x = do
     pure $ dir </> "javascript" </> x
 
 version :: Version
-version = Version [0,8,3] []
+version = Version [2,9,4] []
