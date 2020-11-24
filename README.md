@@ -1,5 +1,11 @@
 # js-flot [![Hackage version](https://img.shields.io/hackage/v/js-flot.svg?label=Hackage)](https://hackage.haskell.org/package/js-flot) [![Stackage version](https://www.stackage.org/package/js-flot/badge/nightly?label=Stackage)](https://www.stackage.org/package/js-flot) [![Build status](https://img.shields.io/github/workflow/status/ndmitchell/js-flot/ci.svg)](https://github.com/ndmitchell/js-flot/actions)
 
+-----------------
+
+**WARNING: The underlying Flot library is in a weird state, you might wish to use [js-chart](https://github.com/jonascarpay/js-chart#readme) instead, see [this pull request for context](https://github.com/ndmitchell/js-flot/pull/5).**
+
+-----------------
+
 This package bundles the minified [Flot](http://www.flotcharts.org/) code
 (a jQuery plotting library) into a Haskell package,
 so it can be depended upon by Cabal packages. The first three components of
