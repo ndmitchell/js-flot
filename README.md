@@ -1,4 +1,4 @@
-# js-flot [![Hackage version](https://img.shields.io/hackage/v/js-flot.svg?label=Hackage)](https://hackage.haskell.org/package/js-flot) [![Stackage version](https://www.stackage.org/package/js-flot/badge/nightly?label=Stackage)](https://www.stackage.org/package/js-flot) [![Build status](https://img.shields.io/github/workflow/status/ndmitchell/js-flot/ci/master.svg)](https://github.com/ndmitchell/js-flot/actions)
+# js-flot [![Hackage version](https://img.shields.io/hackage/v/js-flot.svg?label=Hackage)](https://hackage.haskell.org/package/js-flot) [![Stackage version](https://www.stackage.org/package/js-flot/badge/nightly?label=Stackage)](https://www.stackage.org/package/js-flot) [![Build status](https://img.shields.io/github/actions/workflow/status/ndmitchell/js-flot/ci.yml?branch=master)](https://github.com/ndmitchell/js-flot/actions)
 
 -----------------
 
